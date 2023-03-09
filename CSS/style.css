@@ -1,6 +1,6 @@
 header {
   font-size: 48px;
-  background-color: aqua;
+  background-color: aquamarine;
   padding-left: 12px;
 }
 
@@ -22,5 +22,5 @@ ul li{
 }
 
 ul li :hover{
-    color: blueviolet;
+    color: blueviolet
 }
