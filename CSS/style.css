@@ -2,14 +2,18 @@ header {
   font-size: 48px;
   background-color: aquamarine;
   padding-left: 12px;
-}
-
-article {
-  background-color: aquamarine;
+  border: 5px;
+  border-color: black;
+  border-radius: 5px;
 }
 
 body {
   background-color: blue;
+}
+
+article {
+  background-color: aquamarine;
+  border-radius: 5px;
 }
 
 ul {
