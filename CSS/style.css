@@ -1,0 +1,26 @@
+header {
+  font-size: 48px;
+  background-color: aqua;
+  padding-left: 12px;
+}
+
+article {
+  background-color: aquamarine;
+}
+
+body {
+  background-color: blue;
+}
+
+ul {
+  padding: 12px;
+  list-style-position: inside;
+}
+
+ul li{
+    font-size: large
+}
+
+ul li :hover{
+    color: blueviolet;
+}
