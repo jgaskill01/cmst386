@@ -11,7 +11,7 @@ body {
   background-color: blue;
 }
 
-article {
+section{
   background-color: aquamarine;
   border-radius: 5px;
 }
@@ -21,10 +21,10 @@ ul {
   list-style-position: inside;
 }
 
-ul li{
-    font-size: large
+ul li {
+  font-size: large;
 }
 
-ul li :hover{
-    color: blueviolet
+ul li :hover {
+  color: blueviolet;
 }
