@@ -9,29 +9,79 @@
   </head>
   <body>
     <header><b>Project 1</b></header>
-    <nav>
-      <a href="./gallery.html">Gallery</a>
+    <hr />
+
+    <!-- 
+    <nav id="topnav">
+      <a href="../index.html">Home</a>
+      <nav class="dropdown">
+        <button class="dropbtn">Project1</button>
+        <nav class="dropdown-content">
+          <a href="./gallery.html">Gallery</a>
+        </nav>
+      </nav>
     </nav>
+  -->
+
+    <div class="navbar">
+      <a href="../index.html">Home</a>
+      <div class="dropdown">
+        <button
+          class="dropbtn"
+          onclick="window.location.href = '/project1/project1.html';"
+        >
+          Project1
+        </button>
+        <div class="dropdown-content">
+          <a href="/project1/gallery.html">Gallery</a>
+        </div>
+      </div>
+    </div>
+
+    <br /><br />
 
     <h1>A brief Guide to SEO and HTML Best Practices</h1>
+
     <article>
       <h2>How Search Engines Work</h2>
+
       <p>
-        Search engines Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Voluptates similique sunt, alias excepturi, ipsa, nulla reiciendis
-        voluptatibus iusto explicabo saepe totam sint mollitia dolorum
-        aspernatur dolor veritatis atque impedit aperiam!
+        Search engines used automated programs called "crawlers" to comb through
+        billions of web page documents through their links and record the data
+        from their metatags in huge servers. When a user enters a search query
+        into the engine, results are rendered based on relevance of the user's
+        search to results, and popularity. This is how a search engine like
+        google creates an order with which to display results.
+      </p>
+      <p>
+        Source:
+        <a
+          href="http://d2eeipcrcdle6.cloudfront.net/guides/Moz-The-Beginners-Guide-To-SEO.pdf"
+          >The Beginner's Guide to SEO</a
+        >
       </p>
     </article>
+    <hr />
     <article>
       <h2>The Importance of Keywords and Descriptions as Metatags</h2>
       <p>
-        Keywords and Descriptions Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Facilis quibusdam consectetur, incidunt sapiente
-        corporis ex unde tempore doloremque eos voluptates hic quasi quia fugit
-        exercitationem architecto ipsa, possimus, officia porro.
+        Metatags are a shortened summary or set of keywords that, when given to
+        a user, will determine whether or not a particular site will be entered
+        or not, based on the user's needs. Metatags like the HTML title tag and
+        meta descriptions are what a search engine will show a user when the
+        site is returned as a result, with the title being what the search
+        engine returns as the site's title, and meta description being the
+        little blurb under the title. Meta keywords are another element used by
+        the search engine to find the site based on a user's search.
+      </p>
+      <p>
+        Source:
+        <a href="https://www.conductor.com/academy/what-are-meta-tags/"
+          >conductor.com</a
+        >
       </p>
     </article>
+    <hr />
     <article>
       <h2>The Four Elements that Comprise Writing Relevant Content Links</h2>
       <p>
@@ -41,7 +91,7 @@
         illum commodi nesciunt velit.
       </p>
     </article>
-
+    <hr />
     <article>
       <h2>What is Good Heading Hierarchy?</h2>
       <p>
@@ -51,5 +101,8 @@
         aut nemo perferendis.
       </p>
     </article>
+    <hr />
+    <hr />
+    <footer>Copyright 2023 Jacob Gaskill, CMST 386</footer>
   </body>
 </html>

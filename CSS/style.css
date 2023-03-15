@@ -1,25 +1,44 @@
+* {
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
 header {
   font-size: 48px;
   background-color: aquamarine;
   padding: 12px;
   border: 5px;
   border-color: black;
-  border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   display: flex;
   justify-content: center;
+  border-style: solid;
+  border-top: 0;
+}
+
+footer {
+  padding: 12px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: aquamarine;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-style: solid;
 }
 
 body {
   background-color: rgb(5, 128, 121);
   padding-left: 24px;
   padding-right: 24px;
+  margin: 0;
 }
 
 ul {
   padding: 12px;
   list-style-position: inside;
 }
-
 
 ul li {
   font-size: large;
@@ -29,60 +48,230 @@ ul li :hover {
   color: blueviolet;
 }
 
-section{
+section {
   background-color: aquamarine;
   border-radius: 5px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  border-style: solid;
 }
 
-#mainsection{
+#mainsection {
   background-color: aquamarine;
   border-radius: 5px;
   justify-content: left;
+  border-style: solid;
 }
 
-
-h1{
+h1 {
   background-color: aquamarine;
   border-radius: 5px;
   display: flex;
   justify-content: center;
   padding: 12px;
+  border-color: black;
+  border-style: solid;
 }
 
-h2{
+h2 {
   background-color: aquamarine;
   border-radius: 5px;
   display: flex;
   justify-content: center;
-  padding-top:12px;
+  padding-top: 12px;
 }
 
-p{
+p {
   background-color: aquamarine;
   border-radius: 5px;
   justify-content: left;
   padding-left: 12px;
 }
 
-img{
-  border-radius: 5px;
+hr {
+  margin: 0;
+  background-color: rgb(5, 128, 121);
+  height: 5px;
+  border: 0;
 }
 
-figcaption{
+img {
+  border-radius: 5px;
+  border-style: solid;
+  border-color: black;
+}
+
+figcaption {
   font-size: x-small;
 }
-
-nav{
-  background-color: aquamarine;
-}
-
-article{
+article {
   background-color: aquamarine;
   border-radius: 5px;
+  border-style: solid;
 }
 
+a{
+  font-size: 16px;
+}
 
+button{
+  font-size: 16px;
+  text-decoration-line: underline;
+}
 
+/* I'll leave this attempt here. I tried to get the navbar to work with semantics only
+and failed. In the future, I'd like to get it to work. 
+/*#region NavBar*/
+/*nav {
+  overflow: hidden;
+  background-color: aquamarine;
+  border-style: solid; 
+  
+}
+
+#topnav a{
+  float: left;
+  display:block;
+  color: black;
+  padding: 14px 16px;
+  border-right: 3px;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-left: 0;
+  border-style: solid;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+  border-style: solid;
+  border-left: 5px;
+  border-top: 0;
+  border-bottom: 0;
+  border-left: 0;
+  border-color: black;
+}
+
+.dropdown .dropbtn{
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position:absolute;
+  background-color: aquamarine;
+  box-shadow: 0px 8px 16px 0px;
+  z-index: 1;
+  border-right: 0px;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 14px 16px;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover{
+  background-color: #555;
+  color: black;
+}
+
+#topnav a:hover, .dropdown:hover .dropbtn{
+  background-color: #555;
+  color: white;
+  border-color: black;
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+
+/*#endregion NavBar*/
+
+.navbar {
+  overflow: hidden;
+  background-color: aquamarine;
+  border-radius: 5px;
+  color: black;
+  border: 5px;
+  border-style: solid;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-style: solid;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-left: 0px;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+  border-style: solid;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-left: 0px;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(5, 128, 121);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: aquamarine;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+ 
+  
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  
+
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(5, 128, 121);
+  
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  border-style: solid;
+}
