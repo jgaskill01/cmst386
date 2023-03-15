@@ -19,13 +19,14 @@ header {
 
 footer {
   padding: 12px;
-  margin: 0;
+  margin-top: auto;
   display: flex;
   justify-content: center;
   background-color: aquamarine;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   border-style: solid;
+   
 }
 
 body {
@@ -33,6 +34,9 @@ body {
   padding-left: 24px;
   padding-right: 24px;
   margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 ul {
@@ -274,4 +278,5 @@ and failed. In the future, I'd like to get it to work.
 .dropdown:hover .dropdown-content {
   display: block;
   border-style: solid;
+
 }
