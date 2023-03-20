@@ -69,6 +69,8 @@ section {
 }
 
 h1 {
+  font-size: 32px;
+  font-weight: bold;
   background-color: aquamarine;
   border-radius: 5px;
   display: flex;
@@ -79,6 +81,18 @@ h1 {
 }
 
 h2 {
+  font-size: 24px;
+  font-weight: bold;
+  background-color: aquamarine;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  padding-top: 12px;
+}
+
+h3{
+  font-size: 20px;
+  font-style: bold;
   background-color: aquamarine;
   border-radius: 5px;
   display: flex;
@@ -87,6 +101,7 @@ h2 {
 }
 
 p {
+  font-size: 16px;
   background-color: aquamarine;
   border-radius: 5px;
   justify-content: left;
@@ -117,6 +132,15 @@ article {
 
 a{
   font-size: 16px;
+}
+
+#navbarbutton{
+  font-size: 16px;
+  text-decoration-line: underline;
+}
+
+#navbarbutton:hover{
+  background-color: rgb(5, 128, 121);
 }
 
 button{
