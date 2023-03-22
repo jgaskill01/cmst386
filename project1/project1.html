@@ -1,67 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="Gaskill, Project1, Gallery, CMST386, SEO">
-        <meta name="description" content="A brief guide to SEO, answers questions about SEO best practices">
-        <link rel="stylesheet" href="../css/style.css">
-        <title>Document</title>
-    </head>
-    <body>
-        <header>
-            <b>Project 1</b>
-        </header>
-        <hr>
-        <!-- 
-    <nav id="topnav">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Gaskill, Project1, Gallery, CMST386, SEO">
+    <meta name="description" content="A brief guide to SEO, answers questions about SEO best practices">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <b>Project 1</b>
+    </header>
+    <hr>
+    <nav class="navbar">
       <a href="../index.html">Home</a>
-      <nav class="dropdown">
-        <button class="dropbtn">Project1</button>
-        <nav class="dropdown-content">
-          <a href="./gallery.html">Gallery</a>
-        </nav>
-      </nav>
+      <div class="dropdown">
+        <button
+          class="dropbtn"
+          onclick="window.location.href = '/project1/project1.html';"
+        >
+          Project1
+        </button>
+        <div class="dropdown-content">
+          <a href="/project1/gallery.html">Gallery</a>
+        </div>
+      </div>
     </nav>
-  -->
-        <nav class="navbar">
-            <a href="../index.html">Home</a>
-            <div class="dropdown">
-                <button class="dropbtn" onclick="window.location.href = '/project1/project1.html';">
-                    Project1
-                </button>
-                <div class="dropdown-content">
-                    <a href="/project1/gallery.html">Gallery</a>
-                </div>
-            </div>
-        </nav>
-        <br>
-        <br>
-        <h1>A brief Guide to SEO and HTML Best Practices</h1>
-        <article>
-            <h2>How Search Engines Work</h2>
-            <p>
-                Search engines used automated programs called "crawlers" to comb through
+    <br>
+    <br>
+    <h1>A brief Guide to SEO and HTML Best Practices</h1>
+    <article>
+      <h2>How Search Engines Work</h2>
+      <p>
+        Search engines used automated programs called "crawlers" to comb through
         billions of web page documents through their links and record the data
         from their metatags in huge servers. When a user enters a search query
         into the engine, results are rendered based on relevance of the user's
         search to results, and popularity. This is how a search engine like
         google creates an order with which to display results.
-            </p>
-            <p>
-                Source:
-                <a href="http://d2eeipcrcdle6.cloudfront.net/guides/Moz-The-Beginners-Guide-To-SEO.pdf">
-                    The Beginner's Guide to SEO
-                </a
+      </p>
+      <p>
+        Source:
+        <a
+          href="http://d2eeipcrcdle6.cloudfront.net/guides/Moz-The-Beginners-Guide-To-SEO.pdf"
         >
-            </p>
-        </article>
-        <hr>
-        <article>
-            <h2>The Importance of Keywords and Descriptions as Metatags</h2>
-            <p>
-                Metatags are a shortened summary or set of keywords that, when given to
+          The Beginner's Guide to SEO
+        </a>
+      </p>
+    </article>
+    <hr>
+    <article>
+      <h2>The Importance of Keywords and Descriptions as Metatags</h2>
+      <p>
+        Metatags are a shortened summary or set of keywords that, when given to
         a user, will determine whether or not a particular site will be entered
         or not, based on the user's needs. Metatags like the HTML title tag and
         meta descriptions are what a search engine will show a user when the
@@ -69,76 +62,92 @@
         engine returns as the site's title, and meta description being the
         little blurb under the title. Meta keywords are another element used by
         the search engine to find the site based on a user's search.
-            </p>
-            <p>
-                Source:
-                <a href="https://www.conductor.com/academy/what-are-meta-tags/">
-                    Conductor.com
-                </a
+      </p>
+      <p>
+        Source:
+        <a href="https://www.conductor.com/academy/what-are-meta-tags/">
+          Conductor.com
+        </a>
+      </p>
+    </article>
+    <hr>
+    <article>
+      <h2>The Four Elements that Comprise Writing Relevant Content Links</h2>
+      <p>
+        You can link to just about any content on a website, but one of the most
+        useful is an image. This is because linking so an image source is much
+        less risky, copyright-wise, than just copying someone else's work onto
+        your site. Additionally, one can link to a video. Almost any multimedia
+        can be linked to on a webpage in similar fashion: Anchor tags! But you
+        can link more than just images and videos. A web developer's best friend
+        is linking to other content using hyper-linked text (again using anchor
+        tags). Another type of content you can link to is outside content that
+        either further explains a topic, or maybe gives an example of an
+        existing subject, such as if I made a site about dinosaurs, but linked
+        to a specific outside page about a particular species of dinosaur.
+        Finally, a web developer can create a link that takes the user to an
+        email message draft to whoever you want! You can use the mailto: command
+        to link to your business email address on your official blog, for
+        instance.
+      </p>
+    </article>
+    <hr>
+    <article>
+      <h2>What is Good Heading Hierarchy?</h2>
+      <p>
+        Good heading heirarchy is import to the web designer and developer for
+        both Search Engine Optimization and just general readability for the
+        website. While heading content has not been used by most search engines
+        to rank content for some time, their primary function now is to simply
+        tell the search engine what the site's content is about. Since headings
+        should be used as titles of cooresponding content, they are valuable to
+        a search engine to identify where in a particular website it should send
+        the user. In general, good heading heirarchy should follow common sense
+        rules: h1 should be the title of the overall topic, and h2 through h6
+        should coorespond to a nested content logic. So, if a site is about
+        dinosaurs, good heading heirarchy would look like this:
+      </p>
+    </article>
+    <hr>
+    <h1>Dinosaurs</h1>
+    <article>
+      <h2>Carnivores</h2>
+      <h3>Small Carnivores</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos fugit
+        laborum, quod nisi aperiam aut magni, ea animi vitae sunt, sequi
+        sapiente repudiandae unde quasi omnis assumenda aliquam cumque et?
+      </p>
+      <h3>Large Carnivores</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos fugit
+        laborum, quod nisi aperiam aut magni, ea animi vitae sunt, sequi
+        sapiente repudiandae unde quasi omnis assumenda aliquam cumque et?
+      </p>
+      <h2>Herbivores</h2>
+      <h3>Small Herbivores</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos fugit
+        laborum, quod nisi aperiam aut magni, ea animi vitae sunt, sequi
+        sapiente repudiandae unde quasi omnis assumenda aliquam cumque et?
+      </p>
+      <h3>Large Herbivores</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos fugit
+        laborum, quod nisi aperiam aut magni, ea animi vitae sunt, sequi
+        sapiente repudiandae unde quasi omnis assumenda aliquam cumque et?
+      </p>
+      <p>
+        Sources:
+        <a
+          href="https://www.searchenginejournal.com/heading-tags-for-seo/341817/#close"
+          >SearchEngineJournal.com</a
         >
-            </p>
-        </article>
-        <hr>
-        <article>
-            <h2>The Four Elements that Comprise Writing Relevant Content Links</h2>
-            <p>
-                The four elements Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Eaque ipsa odio inventore consequatur, dolorum sunt, nemo pariatur
-        repellendus ex adipisci reiciendis dignissimos voluptas magnam sint nam
-        illum commodi nesciunt velit.
-            </p>
-        </article>
-        <hr>
-        <article>
-            <h2>What is Good Heading Hierarchy?</h2>
-            <p>
-                Good heading heirarchy is import to the web designer and developer for both
-       Search Engine Optimization and just general readability for the website. While
-       heading content has not been used by most search engines to rank content for
-       some time, their primary function now is to simply tell the search engine what
-       the site's content is about. Since headings should be used as titles of cooresponding
-       content, they are valuable to a search engine to identify where in a particular website
-       it should send the user. In general, good heading heirarchy should follow common sense rules:
-       h1 should be the title of the overall topic, and h2 through h6 should coorespond to a nested content
-       logic. So, if a site is about dinosaurs, good heading heirarchy would look like this:
-            </p>
-        </article>
-        <hr>
-        <h1>
-            Dinosaurs
-        </h1>
-        <article>
-            <h2>
-                Carnivores
-            </h2>
-            <h3>
-                Small Carnivores
-            </h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos fugit laborum, quod nisi aperiam aut magni, ea animi vitae sunt, sequi sapiente repudiandae unde quasi omnis assumenda aliquam cumque et?</p>
-            <h3>
-                Large Carnivores
-            </h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos fugit laborum, quod nisi aperiam aut magni, ea animi vitae sunt, sequi sapiente repudiandae unde quasi omnis assumenda aliquam cumque et?</p>
-            <h2>
-                Herbivores
-            </h2>
-            <h3>
-                Small Herbivores
-            </h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos fugit laborum, quod nisi aperiam aut magni, ea animi vitae sunt, sequi sapiente repudiandae unde quasi omnis assumenda aliquam cumque et?</p>
-            <h3>
-                Large Herbivores
-            </h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos fugit laborum, quod nisi aperiam aut magni, ea animi vitae sunt, sequi sapiente repudiandae unde quasi omnis assumenda aliquam cumque et?</p>
-            <p>
-                Sources:
-                <a href="https://www.searchenginejournal.com/heading-tags-for-seo/341817/#close">SearchEngineJournal.com</a>
-                <br>
-                <a href=""></a>
-            </p>
-        </article>
-        <hr>
-        <hr>
-        <footer>Copyright 2023 Jacob Gaskill, CMST 386</footer>
-    </body>
+        <br>
+      </p>
+    </article>
+    <hr>
+    <hr>
+    <footer>Copyright 2023 Jacob Gaskill, CMST 386</footer>
+  </body>
 </html>

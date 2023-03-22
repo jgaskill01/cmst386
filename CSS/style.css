@@ -64,8 +64,9 @@ section {
 #mainsection {
   background-color: aquamarine;
   border-radius: 5px;
-  justify-content: left;
   border-style: solid;
+  display: inline;
+  padding: 10px;
 }
 
 h1 {
@@ -83,21 +84,22 @@ h1 {
 h2 {
   font-size: 24px;
   font-weight: bold;
+  text-decoration: underline;
   background-color: aquamarine;
   border-radius: 5px;
   display: flex;
   justify-content: center;
-  padding-top: 12px;
+  padding: 12px;
+  
 }
 
 h3{
   font-size: 20px;
-  font-style: bold;
   background-color: aquamarine;
   border-radius: 5px;
   display: flex;
   justify-content: center;
-  padding-top: 12px;
+  padding: 8px;
 }
 
 p {
