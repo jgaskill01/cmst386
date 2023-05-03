@@ -66,19 +66,19 @@ nav .icon {
 }
 
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {
+  nav a:not(:first-child) {
     display: none;
   }
-  .topnav a.icon {
+  nav a.icon {
     float: right;
     display: block;
   }
 }
 @media screen and (max-width: 600px) {
-  .topnav.responsive {
+  nav.responsive {
     position: relative;
   }
-  .topnav.responsive .icon {
+  nav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
@@ -89,15 +89,7 @@ nav .icon {
     text-align: left;
   }
 }
-@media screen and (max-width: 600px) and (max-width: 768px) {
-  nav ul {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-top: 10px;
-  }
-}
+
 header {
   font-size: 48px;
   font-weight: 1000;

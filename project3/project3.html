@@ -5,21 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project 3 - Responsive Design</title>
   <link rel="stylesheet" href="/project3/css/project3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <header>
     Project 3
   </header>
     <nav>
-      <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="project3.html" class="active">Project 3</a></li>
-      </ul>
-      <div class="hamburger-menu">
-        <br>
-        <br>
-        <br>
-      </div>
+        <a href="/index.html">Home</a>
+        <a href="project3.html" class="active">Project 3</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i></a>
     </nav>
   <main>
     <h1>Why Responsive Design?</h1>
@@ -46,5 +42,13 @@
   <footer>
     <p>&copy; 2023 Jacob Gaskill CMST 386 - Project 3</p>
   </footer>
+  <script>function myFunction() {
+    var x = document.getElementById("nav");
+    if (x.className === "nav") {
+      x.className += " responsive";
+    } else {
+      x.className = "nav";
+    }
+  }</script>
 </body>
 </html>
