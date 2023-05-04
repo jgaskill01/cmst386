@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preprocessing - LESS and SASS</title>
-    <link rel="stylesheet" href="/project3/css/project3.css" />
+    <link rel="stylesheet" href="/project3/css/project3.css">
 	<link href='/project3/css/InstrumentSerif-Regular.ttf' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!--link rel="stylesheet" href="/project3/css/project3.scss"-->
   </head>
   <body>
+	<a href="#top">Back to Top</a>
     <header>
 		Preprocessing
 	</header>
@@ -24,7 +25,6 @@
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i></a>
     </nav>
-    </header>
 	<div class="container">
 		<div class="column"><section>
 			<h1>Preprocessing</h1>
@@ -55,21 +55,27 @@
 				<p>Mi-Ins allow the user to define code that will be reused and tag it with the 
 					@mixin directive, included by using @include. Valuable time saver for things like typography
 					and layouts.
-				</p></li><br>
-				<li><strong>Variables</strong></li>
+				</p></li>
+				<li><strong>Variables</strong>
 				<p>Variables allows the user to assign common values that will be reused, such as colors and fonts.
 					Variables are defined using @variable and referenced anywhere in the stylesheet.
-				</p>
-				<br><li><strong>Functions</strong></li>
+				</p></li>
+				<li><strong>Functions</strong>
 				<p>Functions allow the user to create instructions that are reused, such as calulations, transforms,
 					and conversions. Defined using the @function directive and called from in the style sheet.
-				</p>
-				<br>
-				<li><strong>Operators</strong></li>
-				<p>Operators allow the user to complete math calculations</p>
-				<br>
-				<li><strong>Nested Variables</strong></li>
-				<p>blah</p>
+				</p></li>
+				<li><strong>Operators</strong>
+				<p>
+				Operators allow the user to complete math calculations within a style sheet. This seems simple, but when sheets get complex, 
+					it simplifies the maintenance process. A great example is an alternative way to do media queries.
+					For instance, one could use an if statement to look at if the width of an element is > than a certain pixel amount, the media will
+					behave a certain way. This method of doing that would not be possible without operators.</p></li>
+			
+				<li><strong>Nested Variables</strong>
+				<p>Nested variables are another tool that reduces code complexity and length, and increases code readability, organization,
+					and improves ease of maintenance. By allowing the user to program in certain values like '$color-primary: #12345', 
+				and time that value is plugged in, that value will manifest. Now, if the user wants to change the value of $color-primary, 
+			it will automatically change in any place $color-primary is called. This is how nesting the variable saves time.  </p></li>
 			</ol>
 		  </section></div>
 	  </div>
@@ -81,5 +87,10 @@
 		  x.className = "nav";
 		}
 	  }</script>
+
+<footer>
+	<p>&copy; 2023 Jacob Gaskill CMST 386 - Project 3</p>
+  </footer>
+
   </body>
 </html>

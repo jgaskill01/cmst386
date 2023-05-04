@@ -9,7 +9,7 @@
 
 
 html {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 body {
@@ -67,6 +67,17 @@ ul.breadcrumb li a:hover {
   text-decoration: underline;
 }
 
+a[href="#top"] {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  background-color: #000;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
 nav {
   overflow: hidden;
   background-color: #333;
@@ -104,8 +115,6 @@ nav .icon {
     float: right;
     display: block;
   }
-}
-@media screen and (max-width: 600px) {
   nav.responsive {
     position: relative;
   }
@@ -118,8 +127,26 @@ nav .icon {
     float: none;
     display: block;
     text-align: left;
+  } 
+}
+
+@media screen and (max-width: 600px) {
+  .column{
+    display:contents;
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .column{
+    font-size: 16px;
+  }
+
+  body{
+    background-color: lightgray;
+  }
+
+}
+
 
 header {
   font-size: 48px;
@@ -147,7 +174,6 @@ header {
 }
 
 footer {
-  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -173,5 +199,7 @@ p{
 ol{
   list-style: inside;
 }
+
+
 
 /*# sourceMappingURL=project3.css.map */
