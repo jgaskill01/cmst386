@@ -5,64 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Preprocessing - LESS and SASS</title>
     <link rel="stylesheet" href="/project3/css/project3.css" />
+	<link href='/project3/css/InstrumentSerif-Regular.ttf' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--link rel="stylesheet" href="/project3/css/project3.scss"-->
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-        </ul>
-      </nav>
+		Preprocessing
+	</header>
+	<ul class="breadcrumb">
+		<li><a href="/index.html">Home</a></li>
+		<li><a href="/project3/project3.html">Project 3</a></li>
+		<li>Preprocessing</li>
+	  </ul> 
+    <nav id="topnav">
+        <a href="/index.html">Home</a>
+        <a href="project3.html" class="active">Project 3</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i></a>
+    </nav>
     </header>
-    <main>
-      <section>
-        <h1>Preprocessing</h1>
-		<br>
-        <ol>
-          <li>
-            <strong>Client Side</strong>
-			<p>Client Side preprocessing means that the LESS or SASS is transformed into CSS 
-			on the client side, using either a JavaScript tool like Sass.js or Less.js, or any tool
-			that is in the HTML file of the page and runs in the browser. Client side preprocessing can be 
-			used with any browser.	
-			</p>
-          </li>
-          <li>
+	<div class="container">
+		<div class="column"><section>
+			<h1>Preprocessing</h1>
 			<br>
-            <strong>Server Side</strong> 
-			<p>Server-side preprocessing means the LESS or SASS is transformed to CSS  on the server side to 
-				BEFORE it gets to the client browser. This can be done using tools such as Sass or Less that are 
-				installed on the web server, which is more efficient than client-side preprocessing overall, while losing
-			    some of the universal usability.</p>
-          </li>
-        </ol>
-      </section>
-	  <br>
-	  <section>
-		<h1>Elements of SASS / LESS</h1>
-		<br>
-		<ol>
-			<li><strong>Mix-Ins</strong>
-			<p>Mi-Ins allow the user to define code that will be reused and tag it with the 
-				@mixin directive, included by using @include. Valuable time saver for things like typography
-				and layouts.
-			</p></li><br>
-			<li><strong>Variables</strong></li>
-			<p>Variables allows the user to assign common values that will be reused, such as colors and fonts.
-				Variables are defined using @variable and referenced anywhere in the stylesheet.
-			</p>
-			<br><li><strong>Functions</strong></li>
-			<p>Functions allow the user to create instructions that are reused, such as calulations, transforms,
-			    and conversions. Defined using the @function directive and called from in the style sheet.
-			</p>
+			<ol>
+			  <li>
+				<strong>Client Side</strong>
+				<p>Client Side preprocessing means that the LESS or SASS is transformed into CSS 
+				on the client side, using either a JavaScript tool like Sass.js or Less.js, or any tool
+				that is in the HTML file of the page and runs in the browser. Client side preprocessing can be 
+				used with any browser.	
+				</p>
+			  </li>
+			  <li>
+				<strong>Server Side</strong> 
+				<p>Server-side preprocessing means the LESS or SASS is transformed to CSS  on the server side to 
+					BEFORE it gets to the client browser. This can be done using tools such as Sass or Less that are 
+					installed on the web server, which is more efficient than client-side preprocessing overall, while losing
+					some of the universal usability.</p>
+			  </li>
+			</ol>
+		  </section></div>
+		<div class="column"><section>
+			<h1>Elements of SASS / LESS</h1>
 			<br>
-			<li><strong>Operators</strong></li>
-			<p>Operators allow the user to complete math calculations</p>
-			<br>
-			<li><strong>Nested Variables</strong></li>
-			<p>blah</p>
-		</ol>
-	  </section>
-    </main>
+			<ol>
+				<li><strong>Mix-Ins</strong>
+				<p>Mi-Ins allow the user to define code that will be reused and tag it with the 
+					@mixin directive, included by using @include. Valuable time saver for things like typography
+					and layouts.
+				</p></li><br>
+				<li><strong>Variables</strong></li>
+				<p>Variables allows the user to assign common values that will be reused, such as colors and fonts.
+					Variables are defined using @variable and referenced anywhere in the stylesheet.
+				</p>
+				<br><li><strong>Functions</strong></li>
+				<p>Functions allow the user to create instructions that are reused, such as calulations, transforms,
+					and conversions. Defined using the @function directive and called from in the style sheet.
+				</p>
+				<br>
+				<li><strong>Operators</strong></li>
+				<p>Operators allow the user to complete math calculations</p>
+				<br>
+				<li><strong>Nested Variables</strong></li>
+				<p>blah</p>
+			</ol>
+		  </section></div>
+	  </div>
+	<script>function myFunction() {
+		var x = document.getElementById("topnav");
+		if (x.className === "nav") {
+		  x.className += " responsive";
+		} else {
+		  x.className = "nav";
+		}
+	  }</script>
   </body>
 </html>
