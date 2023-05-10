@@ -1,0 +1,323 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Fandom Page</title>
+	<style>
+		html {
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+/* Set the background color and font for the body */
+body {
+	background-color: #f9f9f9;
+	font-family: Arial, sans-serif;
+	margin: 0;
+}
+
+/* Set the styles for the header */
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+header h1 {
+	margin: 0;
+	font-size: 2em;
+}
+
+/* Set the styles for the navigation bar */
+nav {
+	background-color: #555;
+	color: #fff;
+	padding: 10px;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+nav li {
+	margin: 0 10px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.hamburger{
+    display: none;
+}
+
+/* Set the styles for the main content area */
+main {
+	max-width: 800px;
+	margin: 20px auto;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main p {
+	margin: 0 0 20px;
+}
+
+main figure {
+	margin: 0;
+}
+
+main img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Set the styles for the footer */
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+/* Add media queries for smaller screens */
+@media (max-width: 768px) {
+	html {
+		font-size: 14px;
+	}
+
+    nav ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+	nav li {
+		margin: 10px 0;
+	}
+
+    .hamburger {
+    display: block;
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+
+	main {
+		padding: 10px;
+	}
+
+	main h2 {
+		font-size: 1.5em;
+	}
+
+	main p {
+		font-size: 0.9em;
+	}
+
+	footer {
+		padding: 10px;
+	}
+
+    .hero-image {
+    height: 70vh;
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+  
+  .hero-text p {
+    font-size: 1.5rem;
+  }
+  
+  .hero-text a {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+	html {
+		font-size: 12px;
+	}
+
+	header h1 {
+		font-size: 1.5em;
+	}
+
+	nav {
+		padding: 5px;
+	}
+
+    nav ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+	nav li {
+		margin: 10px 0;
+	}
+
+    .hamburger {
+    display: block;
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+
+
+	main {
+		padding: 5px;
+	}
+
+	main h2 {
+		font-size: 1.2em;
+	}
+
+	main p {
+		font-size: 0.8em;
+	}
+
+	footer {
+		padding: 5px;
+	}
+
+    .hero-image {
+    height: 100vh;
+  }
+  
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-text p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-text a {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+  }
+}
+
+    .hero-image {
+  background-image: url('/project4/images/domusmap.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 50vh;
+  position: relative;
+}
+
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.hero-text p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-text a {
+  display: inline-block;
+  background-color: white;
+  color: #333;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: background-color 0.5s ease;
+}
+
+.hero-text a:hover {
+  background-color: #555;
+  color: white;
+}
+
+
+
+	</style>
+
+
+</head>
+<script>function toggleNav() {
+    var nav = document.querySelector('nav ul');
+    if (nav.style.display === 'flex') {
+      nav.style.display = 'none';
+    } else {
+      nav.style.display = 'flex';
+    }
+  }</script>
+<body>
+	<header>
+		<div class="hero-image">
+            <div class="hero-text">
+              <h1>Welcome to my website</h1>
+              <p>Here you'll find information about...</p>
+              <a href="#about">Learn More</a>
+            </div>
+          </div>
+          
+	</header>
+	<nav>
+        <button class="hamburger" onclick="toggleNav()">&#9776;</button>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Characters</a></li>
+          <li><a href="#">Episodes</a></li>
+          <li><a href="#">Fan Fiction</a></li>
+          <li><a href="#">Fan Art</a></li>
+          <li><a href="#">Forum</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+	<main>
+		<h2>Welcome to My Fandom Page</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+             Proin aliquam ultrices nisl, at fermentum justo congue
+              id. Etiam convallis sapien quis neque vehicula congue.
+               Sed elementum ligula nec nunc interdum, in malesuada
+                lorem aliquam. Integer non purus vel ex rhoncus egestas
+                 sit amet non elit. Suspendisse potenti.
+        </p>
+<p>Nulla et lacus vel justo laoreet lacinia. Suspendisse potenti. Suspendisse efficitur diam ac sapien lacinia, in fringilla nulla feugiat. Aliquam a quam aliquet, molestie metus eu, ullamcorper quam. Vestibulum venenatis, metus at scelerisque euismod, arcu eros vestibulum neque, et iaculis odio tellus vel velit. Pellentesque efficitur, libero at ullamcorper ullamcorper, arcu velit lobortis nulla, vel tristique nulla orci sed turpis. Nam consectetur sollicitudin enim, id laoreet augue imperdiet vel. Sed ut velit et lacus rhoncus pretium nec in mauris.</p>
+<figure>
+    <img src="https://via.placeholder.com/400x250" alt="Placeholder image">
+    <figcaption>Image caption goes here</figcaption>
+</figure>
+<p>Nam ullamcorper risus vel ante consequat, in luctus dui malesuada. Cras aliquet auctor nisl eu porttitor. Duis elementum nulla vel elit egestas, a auctor orci semper. Praesent rhoncus bibendum orci, sed posuere augue eleifend vel. Nunc vehicula nisi in mi suscipit iaculis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec commodo metus nec lorem posuere lacinia. Aenean pharetra nec velit a hendrerit. Donec bibendum dapibus bibendum. Sed ac varius nunc. Fusce pulvinar ultrices dolor, a lacinia odio varius vel. Nam eget laoreet libero, ac pellentesque elit. Nulla at sapien in magna tristique malesuada.</p>
+</main>
+<footer>
+<p>&copy; 2023 My Fandom Page</p>
+</footer>
+
+</body>
+</html>

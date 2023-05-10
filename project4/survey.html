@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Exalted World - Home</title>
+    <link rel="stylesheet" href="/project4/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <body>
+    <header>Home</header>
+    <ul class="breadcrumb">
+      <li><a href="/index.html">CMST 386 Home</a></li>
+      <li><a href="/project4/index.html">Project 4 Home</a></li>
+      <li>Survey</li>
+    </ul> 
+    <nav id="topnav">
+      <a href="/project4/index.html">Home</a>
+      <a href="/project4/world.html">The World of Domus</a>
+      <a href="/project4/exalted.html">The Exalted</a>
+      <a href="/project4/bio.html">Author's Bio</a>
+      <a href="/project4/survey.html" class="active">You Can Help Us!</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i
+      ></a>
+    </nav>
+    <br>
+    <h1>Popular Pages</h1>
+    <main>
+        <form method="post" action="mailto:jgaskill01@gmail.com">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required> <br>
+          
+            <label for="age">Age:</label>
+            <select id="age" name="age" required>
+              <option value="">Select age</option>
+              <option value="18-24">18-24</option>
+              <option value="25-34">25-34</option>
+              <option value="35-44">35-44</option>
+              <option value="45-54">45-54</option>
+              <option value="55+">55+</option>
+            </select>
+          <br>
+            <label>Gender:</label>
+            <label>
+              <input type="radio" name="gender" value="man" required>
+              Man
+            </label>
+            <label>
+              <input type="radio" name="gender" value="woman" required>
+              Woman
+            </label>
+            <label>
+              <input type="radio" name="gender" value="other" required>
+              Other
+            </label>
+          <br>
+            <label>How much do you read?</label>
+            <label>
+              <input type="checkbox" name="read" value="constantly" >
+              Constantly
+            </label>
+            <label>
+              <input type="checkbox" name="read" value="casual" >
+              Casual
+            </label>
+          <br>
+            <label for="missing-fantasy">What is missing from fantasy books you normally read?</label>
+            <input type="text" id="missing-fantasy" name="missing-fantasy">
+          <br>
+            <label for="anything-else">Anything else you want to add?</label>
+            <input type="text" id="anything-else" name="anything-else">
+            <br>
+            <button type="submit">Submit</button>
+          </form>
+          
+    </main>
+    <footer>
+        <p>&copy; 2023 Jacob Gaskill CMST 386 - Project 4 <a href="/project4/privacy.html">Privacy Policy</a></p>
+    </footer>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("topnav");
+        if (x.className === "nav") {
+          x.className += " responsive";
+        } else {
+          x.className = "nav";
+        }
+      }
+    </script>
+  </body>
+</html>

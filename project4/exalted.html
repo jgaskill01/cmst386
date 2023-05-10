@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Exalted</title>
+    <link rel="stylesheet" href="/project4/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <body>
+    <header>Home</header>
+    <ul class="breadcrumb">
+      <li><a href="/index.html">CMST 386 Home</a></li>
+      <li><a href="/project4/index.html">Project 4 Home</a></li>
+      <li>The Exalted</li>
+    </ul> 
+    <nav id="topnav">
+      <a href="/project4/index.html">Home</a>
+      <a href="/project4/world.html" class="active">The World of Domus</a>
+      <a href="/project4/exalted.html" class="active">The Exalted</a>
+      <a href="/project4/bio.html" class="active">Author's Bio</a>
+      <a href="/project4/survey.html" class="active">You Can Help Us!</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i
+      ></a>
+    </nav>
+    <h1>The Exalted</h1>
+    <main>
+      <div class="container">
+        <div class="tricolumn"><figure><a href="/project4/exaltedeffector.html"><img src="/project4/images/effector.png"
+            alt="A Map of the Country of Aeris from the Exalted Series" 
+            width="300"></a></figure><h2>Effector</h2><p>
+        </p></div>
+        <div class="tricolumn"><figure><a href="/project4/exaltedinducer.html"><img src="/project4/images/inducerguard.png"
+            alt="A Map of the Country of Manaasik from the Exalted Series" 
+            width="300"></a></figure><h2>Inducer</h2><p>
+        </div>
+        <div class="tricolumn"><figure><a href="/project4/exaltedagronomer.html"><img src="/project4/images/agronomer.png"
+            alt="A Map of the Country of Tenebria from the Exalted Series" 
+            width="279"></a></figure><h2>Agronomer</h2><p></div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2023 Jacob Gaskill CMST 386 - Project 4</p>
+    </footer>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("topnav");
+        if (x.className === "nav") {
+          x.className += " responsive";
+        } else {
+          x.className = "nav";
+        }
+      }
+    </script>
+  </body>
+</html>
