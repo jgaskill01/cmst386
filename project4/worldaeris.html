@@ -54,8 +54,10 @@
      
     </main>
     <footer>
-      <p>&copy; 2023 Jacob Gaskill CMST 386 - Project 4</p>
-    </footer>
+        <p>&copy; 2023 Jacob Gaskill CMST 386 - Project 4 <a href="/project4/privacy.html">Privacy Policy</a></p>
+        <span id="datetime"></span>
+      </footer>
+      
     <script>
       function myFunction() {
         var x = document.getElementById("topnav");
@@ -66,5 +68,15 @@
         }
       }
     </script>
+      <script>
+        // Get the current date and time
+        var today = new Date();
+        var date = today.toLocaleDateString();
+        var time = today.toLocaleTimeString();
+        
+        // Update the datetime element in the footer with the current date and time
+        var datetime = document.getElementById("datetime");
+        datetime.innerHTML = "Current Date and Time: " + date + " " + time;
+      </script>
   </body>
 </html>

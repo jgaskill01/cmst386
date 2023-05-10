@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Exalted World - Home</title>
+    <title>Bio</title>
     <link rel="stylesheet" href="/project4/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <body>
@@ -46,8 +46,10 @@
      
     </main>
     <footer>
-      <p>&copy; 2023 Jacob Gaskill CMST 386 - Project 4</p>
+      <p>&copy; 2023 Jacob Gaskill CMST 386 - Project 4 <a href="/project4/privacy.html">Privacy Policy</a></p>
+      <span id="datetime"></span>
     </footer>
+    
     <script>
       function myFunction() {
         var x = document.getElementById("topnav");
@@ -58,5 +60,15 @@
         }
       }
     </script>
+      <script>
+        // Get the current date and time
+        var today = new Date();
+        var date = today.toLocaleDateString();
+        var time = today.toLocaleTimeString();
+        
+        // Update the datetime element in the footer with the current date and time
+        var datetime = document.getElementById("datetime");
+        datetime.innerHTML = "Current Date and Time: " + date + " " + time;
+      </script>
   </body>
 </html>

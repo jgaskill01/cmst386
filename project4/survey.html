@@ -24,11 +24,13 @@
       ></a>
     </nav>
     <br>
-    <h1>Popular Pages</h1>
+    <h1>Survey</h1>
+    <h2>This survey will help me write you better books,
+         and will help YOU get the product you want! You can write whatever you want, I won't be offended!</h2>
     <main>
         <form method="post" action="mailto:jgaskill01@gmail.com">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required> <br>
+            <input type="text" placeholder="John Doe" id="name" name="name" required> <br><br>
           
             <label for="age">Age:</label>
             <select id="age" name="age" required>
@@ -39,7 +41,7 @@
               <option value="45-54">45-54</option>
               <option value="55+">55+</option>
             </select>
-          <br>
+          <br><br>
             <label>Gender:</label>
             <label>
               <input type="radio" name="gender" value="man" required>
@@ -53,7 +55,7 @@
               <input type="radio" name="gender" value="other" required>
               Other
             </label>
-          <br>
+          <br><br>
             <label>How much do you read?</label>
             <label>
               <input type="checkbox" name="read" value="constantly" >
@@ -63,20 +65,18 @@
               <input type="checkbox" name="read" value="casual" >
               Casual
             </label>
-          <br>
-            <label for="missing-fantasy">What is missing from fantasy books you normally read?</label>
-            <input type="text" id="missing-fantasy" name="missing-fantasy">
-          <br>
-            <label for="anything-else">Anything else you want to add?</label>
-            <input type="text" id="anything-else" name="anything-else">
-            <br>
+          <br><br>
+            <textarea name="Survey" id="question1" cols="70" rows="10" placeholder="What is missing from the fantasy books you normally read?"></textarea>
+            <br><br>
             <button type="submit">Submit</button>
           </form>
           
     </main>
     <footer>
         <p>&copy; 2023 Jacob Gaskill CMST 386 - Project 4 <a href="/project4/privacy.html">Privacy Policy</a></p>
-    </footer>
+        <span id="datetime"></span>
+      </footer>
+      
     <script>
       function myFunction() {
         var x = document.getElementById("topnav");
@@ -87,5 +87,16 @@
         }
       }
     </script>
+    <script>
+        // Get the current date and time
+        var today = new Date();
+        var date = today.toLocaleDateString();
+        var time = today.toLocaleTimeString();
+        
+        // Update the datetime element in the footer with the current date and time
+        var datetime = document.getElementById("datetime");
+        datetime.innerHTML = "Current Date and Time: " + date + " " + time;
+      </script>
+      
   </body>
 </html>
